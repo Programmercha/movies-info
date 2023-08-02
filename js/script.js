@@ -74,7 +74,14 @@ function renderBookmark(bookmarks){
 
 const getMovies = async function(){
     const request = await fetch (`https://www.omdbapi.com/?apikey=${API_KEY}&s=${search}&page=${page}`);
-
+    request.addEventListener('readyStateChange', () =>{
+        if(request.readySate == 4 && request.sratus == 200){
+            console.log("Xato yo'q")
+        }
+        else if(request.status < 4){
+            console.log("xato borr!!!!")
+        }
+    })
     const movies = await request.json()
 
     // console.log(request);
