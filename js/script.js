@@ -46,8 +46,6 @@ elFilms.addEventListener("click", function(e){
     }
 
     renderBookmark(bookmark)
-
-
 })
 
 
