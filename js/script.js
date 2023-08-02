@@ -1,5 +1,4 @@
-"use strict"
-
+"use-strick"
 const elFilms = document.querySelector(".render-films")
 const elForm = document.querySelector(".form")
 const elInput = document.querySelector(".input")
