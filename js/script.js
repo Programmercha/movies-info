@@ -22,7 +22,7 @@ const renderFilms = function(arr){
     elFilms.innerHTML = null
     for(let film of arr.Search){
         const html = `
-    <a href="./info-movies.html" target="_blank">
+    <a href="./info-movies/info-movies.html" target="_blank">
         <div class="films__top-gun">
         <img src="${film.Poster }" alt="Rasm yo'q" width="150" height="225">
         <h1 class="films__title">${film.Title}</h1>
